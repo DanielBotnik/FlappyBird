@@ -40,7 +40,6 @@ public class Bird : MonoBehaviour
         rigidBody.bodyType = RigidbodyType2D.Static;
         pipesPassed = 0;
         state = State.WaitingForStart;
-        GameHandler.GetInstanse().OnStart += ChangeToWaiting;
     }
 
     private void Start()
